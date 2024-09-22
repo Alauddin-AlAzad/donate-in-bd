@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <!-- font add -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b3ceed2f9d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-       <script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#1dd100',
-                        secondary: '#030712',
+                        'primary-btn': '#B4F461',
+                        customGrayWithOpacity: 'rgba(17, 17, 17, 0.7)',
                         couponOne: '#ffbf0f',
                         couponTwo: '#f78c9c',
                         mobileMenu: '#f7f8f8',
@@ -21,15 +26,113 @@
                         buttonColor: 'rgba(29, 209, 0, 0.15)',
                     },
                     fontFamily: {
-                        RaleWay: 'Raleway',
-                        Inter: 'Inter',
+                        lexend: 'RLexend',
+
                     },
                 },
             },
         }
     </script>
 </head>
-<body>
-    <h1>hiii</h1>
+
+<body class="font-lexend">
+    <!-- header section here -->
+    <header>
+        <!-- nav section here here -->
+        <section>
+            <!-- navbarhere -->
+            <nav class="lg:mb-20 mb-6">
+                <div class=" flex flex-row w-full justify-around  bg-[#F9F7F3] lg:pt-6 lg:pb-16 pt-4 pb-8">
+                    <div>
+                        <button class="btn  bg-primary-btn lg:text-xl px-8 py-3 font-semibold rounded-lg text-base  ">Blog</button>
+                    </div>
+                    <div class="flex flex-row gap-4 max-w-[262px] items-center">
+                        <img src="assets/logo.png" alt="">
+                        <p class="text-xl font-semibold hidden lg:block ">Donate Bangladesh</p>
+                        
+                    </div>
+                    <div class="flex flex-row lg:gap-4 gap-2 items-center ">
+                        <img src="assets/coin.png" alt="">
+                        <h2 class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span>5500</span> BDT</h2>
+                    </div>
+                </div>
+            </nav>
+            <!-- here button section -->
+             <div class="flex flex-row justify-center gap-8 mb-8">
+                <div>
+                    <button class=" px-8 py-4rounded-xl bg-primary-btn btn">Donation</button>
+                </div>
+                <div>
+                    <button class=" px-8 py-4 rounded-xl btn border-1 border-gray-300">History</button>
+                </div>
+             </div>
+        </section>
+    </header>
+    <!-- main section here -->
+    <main>
+        <!-- donate section for noakhali -->
+         <section class="lg:w-[60%] w-[95%] border-2 border-gray-200 rounded-xl mx-auto my-0 mb-8">
+            <div class="grid lg:grid-cols-2 grid-cols-1 justify-items-center items-center p-8 gap-8">
+                <!-- image -->
+                 <div class="max-w-[522px] ">
+                    <img src="assets/noakhali.png" alt="">
+                 </div>
+                 <!-- description -->
+                  <div class="max-w-[522px]  flex flex-col gap-5">
+                    <div class="flex flex-row lg:gap-4 gap-2 items-center ">
+                        <img src="assets/coin.png" alt="">
+                        <h2 class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span>5500</span> BDT</h2>
+                    </div>
+                    <h1 class="text-xl font-bold ">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="text-customGrayWithOpacity mb-6"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input type="text" placeholder="Write Donation Amount" class=" w-full py-4 pl-4 border-2 border-gray-300 rounded-lg">
+                    <button class="btn px-8 py-4 rounded-xl bg-primary-btn w-full ">Donate Now</button> 
+                  </div>
+            </div>
+         </section>
+         <!-- section for feny -->
+         <section class="lg:w-[60%] w-[95%] border-2 border-gray-200 rounded-xl mx-auto my-0 mb-8">
+            <div class="grid lg:grid-cols-2 grid-cols-1 justify-items-center items-center p-8 gap-8">
+                <!-- image -->
+                 <div class=" ">
+                    <img class=" lg:w-[542px]  lg:h-[410px]" src="assets/feni.png" alt="">
+                 </div>
+                 <!-- description -->
+                  <div class="max-w-[522px]  flex flex-col gap-5">
+                    <div class="flex flex-row lg:gap-4 gap-2 items-center ">
+                        <img src="assets/coin.png" alt="">
+                        <h2 class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span>500</span> BDT</h2>
+                    </div>
+                    <h1 class="text-xl font-bold ">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p class="text-customGrayWithOpacity mb-6"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input type="text" placeholder="Write Donation Amount" class=" w-full py-4 pl-4 border-2 border-gray-300 rounded-lg">
+                    <button class="btn px-8 py-4 rounded-xl bg-primary-btn w-full ">Donate Now</button> 
+                  </div>
+            </div>
+         </section>
+         <!-- section for qouta movement -->
+         <section class="lg:w-[60%] w-[95%] border-2 border-gray-200 rounded-xl mx-auto my-0 mb-20">
+            <div class="grid lg:grid-cols-2 grid-cols-1 justify-items-center items-center p-8 gap-8">
+                <!-- image -->
+                 <div class=" ">
+                    <img  class=" lg:w-[542px]  lg:h-[410px]" src="assets/quota-protest.png" alt="">
+                 </div>
+                 <!-- description -->
+                  <div class="max-w-[522px]  flex flex-col gap-5">
+                    <div class="flex flex-row lg:gap-4 gap-2 items-center ">
+                        <img src="assets/coin.png" alt="">
+                        <h2 class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span>2400</span> BDT</h2>
+                    </div>
+                    <h1 class="text-xl font-bold ">Aid for Injured in the Quota Movement</h1>
+                    <p class="text-customGrayWithOpacity mb-6"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input type="text" placeholder="Write Donation Amount" class=" w-full py-4 pl-4 border-2 border-gray-300 rounded-lg">
+                    <button class="btn px-8 py-4 rounded-xl bg-primary-btn w-full ">Donate Now</button> 
+                  </div>
+            </div>
+         </section>
+    </main>
+    <!-- footer here -->
+    <footer></footer>
 </body>
+
 </html>
