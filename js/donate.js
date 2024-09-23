@@ -11,7 +11,7 @@ document.getElementById('donate-now-1').addEventListener('click',function(event)
 if(donateInput1Convert> 0 && mainBalanceConvert>=donateInput1Convert )
 {
    const newBalance=mainBalanceConvert-donateInput1Convert;
-   const newBalance1=mainBalanceConvert+donateInput1Convert;
+   const newBalance1=balance1Convert+donateInput1Convert;
    document.getElementById('mainballance').innerText=newBalance;
    document.getElementById('ballance1').innerText=newBalance1;
 }
