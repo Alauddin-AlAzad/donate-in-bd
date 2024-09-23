@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <!-- font add -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b3ceed2f9d.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-btn': '#B4F461',
+            customGrayWithOpacity: 'rgba(17, 17, 17, 0.7)',
+
+          },
+          fontFamily: {
+            lexend: 'RLexend',
+
+          },
+
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="font-lexend ">
+  <header>
+    <nav class="lg:mb-20 mb-6">
+      <div class=" flex flex-row w-full justify-around  bg-[#F9F7F3] lg:pt-6 lg:pb-16 pt-4 pb-8">
+        <div>
+          <button id="blog-home"
+            class="btn  bg-primary-btn lg:text-xl px-8 py-3 font-semibold rounded-lg text-base  ">Home</button>
+        </div>
+        <div class="flex flex-row gap-4 max-w-[262px] items-center">
+          <img src="assets/logo.png" alt="">
+          <p class="text-xl font-semibold hidden lg:block ">Donate Bangladesh</p>
+
+        </div>
+        <div class="flex flex-row lg:gap-4 gap-2 items-center ">
+          <img src="assets/coin.png" alt="">
+          <h2 class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span>5500</span> BDT
+          </h2>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="w-[90%] mx-auto my-0 mt-10">
+    <div class="flex flex-row gap-4 items-center">
+      <h1 class="text-6xl font-bold mb-12">Important FAQ</h1>
+      <img class="w-[60px] h-[60px] hidden lg:block" src="assets/help.png" alt="">
+    </div>
+    <div>
+      <div class="collapse collapse-arrow bg-white border-2 border-gray-300 mb-4">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is Document Object Model?</div>
+        <div class="collapse-content">
+          <p>he Document Object Model (DOM) is a programming interface for web documents. It represents the structure of
+            a document as a hierarchical tree of objects, where each object corresponds to a part of the document, such
+            as elements, attributes, and text. The DOM allows you to access, modify, and manipulate the content and
+            structure of HTML and XML documents dynamically. Using JavaScript, you can interact with the DOM to change
+            elements, update attributes, and respond to user events. This dynamic interaction enables the creation of
+            interactive and responsive web pages.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-white border-2 border-gray-300 mb-4">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
+        <div class="collapse-content">
+          <p>Selecting elements from the DOM (Document Object Model) is a fundamental task in web development, enabling
+            you to interact with and manipulate HTML elements.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-white border-2 border-gray-300 mb-4">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">what is the event delegation in the context of the DOM and why
+          is it useful?</div>
+        <div class="collapse-content">
+          <p>Event delegation is a technique used in JavaScript to manage events more efficiently by leveraging event
+            bubbling. Instead of attaching event handlers to each individual element, you attach a single event handler
+            to a parent element. This handler will then manage events for all of its child elements.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-white border-2 border-gray-300 mb-4">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate any element's attributes and styles using
+          DOM?</div>
+        <div class="collapse-content">
+          <p>Manipulating an element's attributes and styles using the DOM (Document Object Model) is a common task in
+            web development. You can achieve this using JavaScript to interact with and modify HTML elements dynamically
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/back.js"></script>
+</body>
+
+</html>
