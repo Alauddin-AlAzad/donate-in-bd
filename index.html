@@ -34,15 +34,15 @@
 
 <body class="font-lexend">
     <!-- header section here -->
-    <header class="sticky top-0 border-b bg-white shadow-md >">
+    <header class="sticky top-0 border-b backdrop-blur-lg shadow-md >">
         <!-- nav section here here -->
         <section>
             <!-- navbarhere -->
             <nav class="lg:mb-20 mb-6">
                 <div class=" flex flex-row w-full justify-around  bg-[#F9F7F3] lg:pt-6 lg:pb-16 pt-4 pb-8">
                     <div>
-                        <button
-                          id="home-blog"  class="  btn  bg-primary-btn lg:text-xl px-8 py-3 font-semibold rounded-lg text-base  ">Blog</button>
+                        <button id="home-blog"
+                            class="  btn  bg-primary-btn lg:text-xl px-8 py-3 font-semibold rounded-lg text-base  ">Blog</button>
                     </div>
                     <div class="flex flex-row gap-4 max-w-[262px] items-center">
                         <img src="assets/logo.png" alt="">
@@ -51,7 +51,8 @@
                     </div>
                     <div class="flex flex-row lg:gap-4 gap-2 items-center ">
                         <img src="assets/coin.png" alt="">
-                        <h2 class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span id="mainballance">5500</span> BDT
+                        <h2 class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span
+                                id="mainballance">5500</span> BDT
                         </h2>
                     </div>
                 </div>
@@ -59,16 +60,16 @@
             <!-- here button section -->
             <div class="flex flex-row justify-center gap-8 mb-8">
                 <div>
-                    <button class=" px-8 py-4rounded-xl bg-primary-btn btn">Donation</button>
+                    <button id="blog" class=" px-8 py-4rounded-xl bg-primary-btn btn">Donation</button>
                 </div>
                 <div>
-                    <button class=" px-8 py-4 rounded-xl btn border-1 border-gray-300">History</button>
+                    <button id="history" class=" px-8 py-4 rounded-xl btn border-1 border-gray-300">History</button>
                 </div>
             </div>
         </section>
     </header>
     <!-- main section here -->
-    <main class="mt-8">
+    <main id="main-tab" class="mt-8 ">
         <!-- donate section for noakhali -->
         <section class="lg:w-[60%] w-[95%] border-2 border-gray-200 rounded-xl mx-auto my-0 mb-8">
             <div class="grid lg:grid-cols-2 grid-cols-1 justify-items-center items-center p-8 gap-8">
@@ -80,7 +81,8 @@
                 <div class="max-w-[522px]  flex flex-col gap-5">
                     <div class="flex flex-row lg:gap-4 gap-2 items-center ">
                         <img src="assets/coin.png" alt="">
-                        <h2  class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span id="ballance1">5500</span> BDT
+                        <h2 class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span
+                                id="ballance1">5500</span> BDT
                         </h2>
                     </div>
                     <h1 class="text-xl font-bold ">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -105,7 +107,8 @@
                 <div class="max-w-[522px]  flex flex-col gap-5">
                     <div class="flex flex-row lg:gap-4 gap-2 items-center ">
                         <img src="assets/coin.png" alt="">
-                        <h2 class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span>500</span> BDT
+                        <h2 class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span
+                                id="ballance2">500</span> BDT
                         </h2>
                     </div>
                     <h1 class="text-xl font-bold ">Donate for Flood Relief in Feni,Bangladesh</h1>
@@ -113,9 +116,10 @@
                         damage to homes infrastructure. Your donation will help provide essential supplies and to those
                         affected by this disaster. Every contribution, big or small, makes difference. Please join us in
                         supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="number" placeholder="Write Donation Amount"
+                    <input id="input-2" type="number" placeholder="Write Donation Amount"
                         class=" w-full py-4 pl-4 border-2 border-gray-300 rounded-lg">
-                    <button class="btn px-8 py-4 rounded-xl bg-primary-btn w-full ">Donate Now</button>
+                    <button class="btn px-8 py-4 rounded-xl bg-primary-btn w-full " id="donate-now-2">Donate
+                        Now</button>
                 </div>
             </div>
         </section>
@@ -130,7 +134,8 @@
                 <div class="max-w-[522px]  flex flex-col gap-5">
                     <div class="flex flex-row lg:gap-4 gap-2 items-center ">
                         <img src="assets/coin.png" alt="">
-                        <h2 class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span>2400</span> BDT
+                        <h2 class=" text-base lg:text-xl text-customGrayWithOpacity max-w-[165px]"><span
+                                id="ballance3">2400</span> BDT
                         </h2>
                     </div>
                     <h1 class="text-xl font-bold ">Aid for Injured in the Quota Movement</h1>
@@ -138,18 +143,23 @@
                         damage to homes infrastructure. Your donation will help provide essential supplies and to those
                         affected by this disaster. Every contribution, big or small, makes difference. Please join us in
                         supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="number" placeholder="Write Donation Amount"
+                    <input id="input-3" type="number " placeholder="Write Donation Amount"
                         class=" w-full py-4 pl-4 border-2 border-gray-300 rounded-lg">
-                    <button class="btn px-8 py-4 rounded-xl bg-primary-btn w-full ">Donate Now</button>
+                    <button id="donate-now-3" class="btn px-8 py-4 rounded-xl bg-primary-btn w-full  ">Donate
+                        Now</button>
                 </div>
             </div>
         </section>
     </main>
-    <!-- footer here -->
-    <footer></footer>
+  <!-- HISTORY TAB HERE -->
+            <div id="history-section" class=" lg:w-[60%] w-[95%] mx-auto my-0 mt-8 ">
+              
+            </div>
+           
+        
     <!-- js linked -->
-     <script src="js/blog.js"></script>
-     <script src="js/donate.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/donate.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,5 @@
-document.getElementById('blog-home').addEventListener('click',function(event)
-{
+document.getElementById('blog-home').addEventListener('click', function (event) {
     event.preventDefault();
-    window.location.href='index.html';
-  
+    window.location.href = 'index.html';
+
 });
