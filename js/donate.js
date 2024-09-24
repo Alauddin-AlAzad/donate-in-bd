@@ -17,7 +17,7 @@ document.getElementById('donate-now-1').addEventListener('click', function () {
         historyItem.className = 'bg-white p-8 m-8 border-2 border-gray-300 rounded-xl ';
         historyItem.innerHTML = `
         
-        <p class="text-xl font-bold ">${donateInput1} Taka is Donated for Aid for Injured in the Quota Movement, Banglades</p>
+        <p class="text-xl font-bold ">${donateInput1} Taka is Donated for Flood at Noakhali, Bangladesh</p>
           <p class="pt-4 text-gray-400 ">date : ${new Date()}</p>
         `
         const historyContainer = document.getElementById('history-section');
@@ -55,7 +55,7 @@ document.getElementById('donate-now-2').addEventListener('click', function (even
         historyItem.className = 'bg-white p-8 m-8 border-2 border-gray-300 rounded-xl ';
         historyItem.innerHTML = `
         
-        <p class="text-xl font-bold ">${donateInput1} Taka is Donated for Aid for Injured in the Quota Movement, Banglades</p>
+        <p class="text-xl font-bold ">${donateInput1} Taka is Donate for Flood Relief in Feni,Bangladesh</p>
           <p class="pt-4 text-gray-400 ">date : ${new Date()}</p>
         `
         const historyContainer = document.getElementById('history-section');
