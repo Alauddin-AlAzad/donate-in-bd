@@ -14,6 +14,17 @@ document.getElementById('donate-now-1').addEventListener('click', function (even
         const newBalance1 = balance1Convert + donateInput1Convert;
         document.getElementById('mainballance').innerText = newBalance;
         document.getElementById('ballance1').innerText = newBalance1;
+        const historyItem = document.createElement("div");
+        historyItem.className = 'bg-white p-8 m-8 border-2 border-gray-300 rounded-xl ';
+        historyItem.innerHTML = `
+        
+        <p class="text-xl font-bold ">${donateInput1} Taka is Donated for Aid for Injured in the Quota Movement, Banglades</p>
+          <p class="pt-4 text-gray-400 ">date : ${new Date()}</p>
+        `
+        const historyContainer = document.getElementById('history-section');
+        historyContainer.classList.remove('hidden')
+        historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+    
     }
     else if (donateInput1Convert > mainBalanceConvert) {
         alert("Not Enough Balance")
@@ -21,14 +32,7 @@ document.getElementById('donate-now-1').addEventListener('click', function (even
     else {
         alert("Please Enter Correct Value")
     }
-    const historyItem = document.createElement("div");
-    historyItem.className = 'bg-white p-8 m-8 border-2 border-gray-300 rounded-xl ';
-    historyItem.innerHTML = `
-    
-    <p>ppppp</p>
-    `
-    const historyContainer = document.getElementById('history-section');
-    historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+  
 })
 
 // donate-2
@@ -47,6 +51,17 @@ document.getElementById('donate-now-2').addEventListener('click', function (even
         const newBalance1 = balance1Convert + donateInput1Convert;
         document.getElementById('mainballance').innerText = newBalance;
         document.getElementById('ballance2').innerText = newBalance1;
+        const historyItem = document.createElement("div");
+        historyItem.className = 'bg-white p-8 m-8 border-2 border-gray-300 rounded-xl ';
+        historyItem.innerHTML = `
+        
+        <p class="text-xl font-bold ">${donateInput1} Taka is Donated for Aid for Injured in the Quota Movement, Banglades</p>
+          <p class="pt-4 text-gray-400 ">date : ${new Date()}</p>
+        `
+        const historyContainer = document.getElementById('history-section');
+        historyContainer.classList.remove('hidden')
+        historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+    
     }
     else if (donateInput1Convert > mainBalanceConvert) {
         alert("Not Enough Balance")
@@ -54,14 +69,7 @@ document.getElementById('donate-now-2').addEventListener('click', function (even
     else {
         alert("Please Enter Correct Value")
     }
-    const historyItem = document.createElement("div");
-    historyItem.className = 'bg-white p-8 m-8 border-2 border-gray-300 rounded-xl ';
-    historyItem.innerHTML = `
-    
-    <p>ppppp</p>
-    `
-    const historyContainer = document.getElementById('history-section');
-    historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+  
 })
 
 // donate 3
@@ -80,6 +88,18 @@ document.getElementById('donate-now-3').addEventListener('click', function (even
         const newBalance3 = balance1Convert + donateInput1Convert;
         document.getElementById('mainballance').innerText = newBalance;
         document.getElementById('ballance3').innerText = newBalance3;
+        const historyItem = document.createElement("div");
+        historyItem.className = 'bg-white p-8 m-8 border-2 border-gray-300 rounded-xl ';
+        historyItem.innerHTML = `
+        
+        <p class="text-xl font-bold ">${donateInput1} Taka is Donated for Aid for Injured in the Quota Movement, Banglades</p>
+          <p class="pt-4 text-gray-400 ">date : ${new Date()}</p>
+        `
+        const historyContainer = document.getElementById('history-section');
+        historyContainer.classList.remove('hidden')
+        historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+    
+
     }
     else if (donateInput1Convert > mainBalanceConvert) {
         alert("Not Enough Balance")
@@ -87,15 +107,7 @@ document.getElementById('donate-now-3').addEventListener('click', function (even
     else {
         alert("Please Enter Correct Value")
     }
-    const historyItem = document.createElement("div");
-    historyItem.className = 'bg-white p-8 m-8 border-2 border-gray-300 rounded-xl ';
-    historyItem.innerHTML = `
-    
-    <p>ppppp</p>
-    `
-    const historyContainer = document.getElementById('history-section');
-    historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-
+   
 })
 // button-history
 
