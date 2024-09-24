@@ -117,6 +117,7 @@ historyBtn.addEventListener('click', function () {
     document.getElementById('blog').classList.remove('bg-primary-btn');
     document.getElementById('main-tab').classList.add('hidden');
     document.getElementById('history-section').classList.remove('hidden');
+    document.getElementById('hidden-vai').classList.remove('hidden');
 });
 
 

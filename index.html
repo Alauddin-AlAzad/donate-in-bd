@@ -153,14 +153,50 @@
         </section>
     </main>
   <!-- HISTORY TAB HERE -->
-            <div id="history-section" class="hidden lg:w-[60%] w-[95%] mx-auto my-0 mt-8 ">
+            <section id="hidden-vai" class="hidden">
+                <div id="history-section" class="hidden lg:w-[60%] w-[95%] mx-auto my-0 mt-8 ">
               
+                </div>
+            </section>
+            <!-- The button to open modal -->
+
+            <label id="modal-show" for="my_modal_6" class="btn hidden ">open modal</label>
+            <!-- Put this part before </body> tag -->
+            <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+            <div class="modal " role="dialog">
+              <div class="modal-box flex flex-col justify-center items-center">
+                <h3 class="text-xl font-bold">Congrates!</h3>
+            
+                <p class="py-4 ">You Have Donated for Humankind</p>
+                <img src="./assets/coin.png" alt="">
+                <p class="py-4 text-xl font-bold">Successfully</p>
+                <div class="modal-action ">
+                  <label for="my_modal_6" class="btn ">Close Conformation</label>
+                </div>
+              </div>
             </div>
-           
-        
+
+            <!-- Put this part before </body> tag -->
+             <div class="" id="hi-modal">
+                <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                <div class="modal " role="dialog">
+                  <div class="modal-box flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-bold">Congrates!</h3>
+                
+                    <p class="py-4 ">You Have Donated for Humankind</p>
+                    <img src="./assets/coin.png" alt="">
+                    <p class="py-4 text-xl font-bold">Successfully</p>
+                    <div class="modal-action ">
+                      <label for="my_modal_6" class="btn ">Close Conformation</label>
+                    </div>
+                  </div>
+                </div>
+             </div>
+          
     <!-- js linked -->
     <script src="js/blog.js"></script>
     <script src="js/donate.js"></script>
+
 </body>
 
 </html>
