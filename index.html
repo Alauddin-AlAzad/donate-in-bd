@@ -160,39 +160,25 @@
             </section>
             <!-- The button to open modal -->
 
-            <label id="modal-show" for="my_modal_6" class="btn hidden ">open modal</label>
-            <!-- Put this part before </body> tag -->
-            <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-            <div class="modal " role="dialog">
-              <div class="modal-box flex flex-col justify-center items-center">
-                <h3 class="text-xl font-bold">Congrates!</h3>
-            
-                <p class="py-4 ">You Have Donated for Humankind</p>
-                <img src="./assets/coin.png" alt="">
-                <p class="py-4 text-xl font-bold">Successfully</p>
-                <div class="modal-action ">
-                  <label for="my_modal_6" class="btn ">Close Conformation</label>
-                </div>
-              </div>
-            </div>
-
-            <!-- Put this part before </body> tag -->
-             <div class="" id="hi-modal">
-                <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-                <div class="modal " role="dialog">
-                  <div class="modal-box flex flex-col justify-center items-center">
-                    <h3 class="text-xl font-bold">Congrates!</h3>
-                
-                    <p class="py-4 ">You Have Donated for Humankind</p>
-                    <img src="./assets/coin.png" alt="">
-                    <p class="py-4 text-xl font-bold">Successfully</p>
-                    <div class="modal-action ">
-                      <label for="my_modal_6" class="btn ">Close Conformation</label>
-                    </div>
+ 
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                 <div class="flex flex-col justify-center items-center gap-4">
+                   <h2 class="text-xl font-bold">Congrates!</h2>
+                   <img src="assets/coin.png" alt="">
+                  <p class=" text-sm ">You Have Donated for Humankind</p>
+                  <h3 class="text-xl font-bold">Successfully</h3>
+                 </div>
+                  <div class="modal-action">
+                    <form method="dialog" class="mx-auto">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn ">Close conformation</button>
+                    </form>
                   </div>
                 </div>
-             </div>
-          
+              </dialog>
+
+  
     <!-- js linked -->
     <script src="js/blog.js"></script>
     <script src="js/donate.js"></script>

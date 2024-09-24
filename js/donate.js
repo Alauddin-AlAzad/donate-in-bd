@@ -1,6 +1,5 @@
 // donate -1
-document.getElementById('donate-now-1').addEventListener('click', function (event) {
-    event.preventDefault();
+document.getElementById('donate-now-1').addEventListener('click', function () {
     const donateInput1 = document.getElementById('input-1').value;
     const mainBalance = document.getElementById('mainballance').innerText;
     const mainBalanceConvert = parseFloat(mainBalance);
@@ -24,6 +23,7 @@ document.getElementById('donate-now-1').addEventListener('click', function (even
         const historyContainer = document.getElementById('history-section');
         historyContainer.classList.remove('hidden')
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+        document.getElementById("my_modal_1").showModal();
     
     }
     else if (donateInput1Convert > mainBalanceConvert) {
@@ -61,6 +61,7 @@ document.getElementById('donate-now-2').addEventListener('click', function (even
         const historyContainer = document.getElementById('history-section');
         historyContainer.classList.remove('hidden')
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);
+        document.getElementById("my_modal_1").showModal();
     
     }
     else if (donateInput1Convert > mainBalanceConvert) {
@@ -98,7 +99,8 @@ document.getElementById('donate-now-3').addEventListener('click', function (even
         const historyContainer = document.getElementById('history-section');
         historyContainer.classList.remove('hidden')
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-    
+
+        document.getElementById("my_modal_1").showModal();
 
     }
     else if (donateInput1Convert > mainBalanceConvert) {
